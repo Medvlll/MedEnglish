@@ -1,11 +1,25 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#102A43"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Med’English</title>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#102A43"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="shortcut icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Med’English</title>
 <style>
 :root{--n:#102A43;--b:#1F6F8B;--s:#9DD7E8;--bg:#F4F8FB;--mut:#71808C;--line:#DCE7ED}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#17324D;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;padding-bottom:92px}header{background:linear-gradient(135deg,var(--n),var(--b));color:white;padding:calc(16px + env(safe-area-inset-top)) 18px 20px;position:sticky;top:0;z-index:8}.brand{display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:13px;background:white;padding:5px}.brand h1{margin:0;font-size:23px}.brand p{margin:2px 0 0;font-size:12px;opacity:.8}main{max-width:700px;margin:auto;padding:16px}.view{display:none}.view.active{display:block}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:19px;margin-bottom:14px;box-shadow:0 7px 24px #102a4310}.hero{background:linear-gradient(135deg,#fff,#eaf5f9)}h2{margin:0 0 8px;font-size:20px}.small{font-size:12px;color:var(--mut)}.stat{display:flex;justify-content:space-between;margin:9px 0;font-size:14px}.bar{height:9px;background:#e5edf1;border-radius:99px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--b),var(--s));width:0}.btn{border:0;border-radius:14px;padding:13px 15px;font-size:15px;font-weight:700}.primary{background:var(--n);color:white}.secondary{background:white;border:1px solid var(--line);color:#17324D}.row{display:flex;gap:9px;flex-wrap:wrap}.row>*{flex:1}.big{text-align:center;font-size:38px;font-weight:800;margin:18px 0 4px}.trans{text-align:center;font-size:21px;color:var(--mut);margin-bottom:18px}.example{background:#F0F5F7;border-radius:14px;padding:13px;font-size:14px;line-height:1.45}.segment{display:flex;background:#e9f0f3;border-radius:13px;padding:4px;margin-bottom:15px}.segment button{flex:1;border:0;background:transparent;padding:10px;border-radius:10px;font-weight:700;color:var(--mut)}.segment button.active{background:white;color:var(--n);box-shadow:0 2px 8px #102a4314}input,select{width:100%;padding:13px;border:1px solid var(--line);border-radius:13px;background:white;font-size:16px;margin-bottom:10px}.choices{display:grid;gap:9px;margin-top:14px}.choices button{background:white;color:#17324D;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:left;font-size:15px}.choices button.correct{background:#e7f6ee;border-color:#8bcaab}.choices button.wrong{background:#fdeaea;border-color:#e0a3a3}.wordlist{display:grid;gap:8px}.word{background:white;border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;justify-content:space-between;gap:10px}.word b{font-size:15px}.word span{font-size:13px;color:var(--mut);text-align:right}.mode{text-align:center;font-weight:800;font-size:14px;color:var(--b)}.swap{display:block;margin:10px auto;border:0;background:#edf4f7;border-radius:50%;width:40px;height:40px;font-size:18px}nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:8px 3px calc(8px + env(safe-area-inset-bottom));z-index:10}nav button{border:0;background:none;color:#82919B;font-size:10px;padding:3px 5px}nav b{display:block;font-size:19px;line-height:21px}nav button.active{color:var(--b);font-weight:800}.toast{position:fixed;left:18px;right:18px;bottom:98px;background:var(--n);color:white;padding:13px;border-radius:14px;text-align:center;display:none;z-index:30}.pill{display:inline-block;background:#eaf3f6;color:var(--b);border-radius:99px;padding:5px 8px;font-size:11px;font-weight:700}
 </style></head><body>
-<header><div class="brand"><img class="logo" src="icon.svg"><div><h1>Med’English</h1><p>1000 mots essentiels pour voyager</p></div></div></header><main>
+<header><div class="brand"><img class="logo" src="icon-192.png" alt="Med’English" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo fallback-logo" style="display:none;align-items:center;justify-content:center;background:white;color:#102A43;font-weight:900;font-size:22px">M</div><div><h1>Med’English</h1><p>1000 mots essentiels pour voyager</p></div></div></header><main>
 <section id="home" class="view active"><div class="card hero"><span class="pill">TON OBJECTIF</span><h2 style="margin-top:8px">20 mots par jour</h2><p class="small">Apprends progressivement les 1000 mots avec flashcards, traductions et quiz.</p><div class="stat"><span>Mots maîtrisés</span><b id="mastered">0 / 1000</b></div><div class="bar"><div class="fill" id="progress"></div></div></div><div class="row"><button class="btn primary" onclick="startFlash()">🧠 Apprendre</button><button class="btn secondary" onclick="startQuiz()">🎯 Quiz</button></div><div class="card"><h2>⚡ Traduction express</h2><p class="small">Français → anglais ou anglais → français.</p><button class="btn primary" style="width:100%" onclick="show('translate');newT()">Ouvrir</button></div></section>
 <section id="learn" class="view"><div class="card"><div class="small" id="counter"></div><div class="big" id="en"></div><div class="trans" id="fr">•••</div><div class="example" id="ex">Appuie sur Afficher pour voir la phrase anglaise.</div><button class="btn secondary" id="exBtn" style="width:100%;margin-top:9px" onclick="toggleExample()">Afficher la phrase</button><div class="example" id="exFr" style="display:none;margin-top:9px"></div><br><div class="row"><button class="btn secondary" onclick="reveal()">Afficher</button><button class="btn primary" onclick="rateFlash(true)">✓ Je connais</button></div><div class="row" style="margin-top:9px"><button class="btn secondary" onclick="rateFlash(false)">↻ À revoir</button></div><br><button class="btn secondary" style="width:100%" onclick="nextFlash()">Mot suivant →</button></div></section>
-<section id="translate" class="view"><div class="card"><div class="segment"><button id="frMode" class="active" onclick="setMode('fr')">🇫🇷 Français → Anglais</button><button id="enMode" onclick="setMode('en')">🇬🇧 Anglais → Français</button></div><div class="mode" id="modeTitle">Traduis ce mot en anglais</div><div class="big" id="tWord"></div><input id="tInput" placeholder="Écris ta réponse…" autocomplete="off"><button class="btn primary" style="width:100%" onclick="checkT()">Vérifier</button><p id="tResult" class="small" style="text-align:center"></p><button class="swap" onclick="newT()">↻</button><div class="example" id="tEx" style="display:none"></div><button class="btn secondary" id="tExBtn" style="width:100%;margin-top:9px" onclick="toggleTExample()">Afficher la phrase</button></div></section>
+<section id="translate" class="view"><div class="card">
+<div class="segment"><button id="frMode" class="active" onclick="setMode('fr')">🇫🇷 Français → Anglais</button><button id="enMode" onclick="setMode('en')">🇬🇧 Anglais → Français</button></div>
+<h2>💬 Traducteur</h2>
+<p class="small" id="translatorHint">Écris une phrase en français et je la traduis en anglais.</p>
+<textarea id="tInput" rows="6" placeholder="Écris ta phrase ici…" autocomplete="off" style="width:100%;padding:14px;border:1px solid var(--line);border-radius:14px;background:white;font-size:17px;line-height:1.45;resize:vertical;font-family:inherit"></textarea>
+<div class="row" style="margin-top:9px"><button class="btn primary" onclick="translateSentence()">✨ Traduire</button><button class="btn secondary" onclick="swapTranslator()">⇄ Inverser</button></div>
+<div id="tLoading" class="small" style="display:none;text-align:center;margin-top:12px">Traduction en cours…</div>
+<div id="tResultBox" class="example" style="display:none;margin-top:14px">
+<div class="small" id="tResultLabel">🇬🇧 Anglais</div>
+<div id="tResult" style="font-size:18px;line-height:1.5;margin-top:5px"></div>
+</div>
+<div class="row" id="translatorActions" style="display:none;margin-top:9px"><button class="btn secondary" onclick="copyTranslation()">📋 Copier</button><button class="btn secondary" onclick="speakTranslation()">🔊 Écouter</button></div>
+<button class="btn secondary" style="width:100%;margin-top:10px" onclick="clearTranslator()">Effacer</button>
+<p class="small" style="margin-top:12px">💡 La traduction utilise Internet pour traduire des phrases complètes.</p>
+</div></section>
 <section id="quiz" class="view"><div class="card"><div class="small" id="qc"></div><h2 id="q"></h2><div class="choices" id="choices"></div><p id="qr" class="small"></p></div></section>
 <section id="words" class="view"><div class="card"><h2>📚 Les 1000 mots</h2><input id="search" placeholder="Rechercher…" oninput="renderWords()"><select id="cat" onchange="renderWords()"><option value="">Toutes les catégories</option></select></div><div class="wordlist" id="list"></div></section>
 <section id="progress" class="view"><div class="card"><h2>📈 Ma progression</h2><div class="stat"><span>Maîtrisés</span><b id="pm">0</b></div><div class="stat"><span>À revoir</span><b id="pr">1000</b></div><div class="bar"><div class="fill" id="pb"></div></div></div></section>
@@ -77,32 +91,78 @@ function rateFlash(ok){
 function toggleExample(){let w=session[idx];if(document.getElementById("exFr").style.display==="none"){document.getElementById("exFr").style.display="block";document.getElementById("exFr").innerHTML="<b>🇫🇷 Traduction :</b><br>"+exampleFR(w);document.getElementById("exBtn").textContent="Masquer la traduction"}else{document.getElementById("exFr").style.display="none";document.getElementById("exBtn").textContent="Afficher la traduction française"}}
 function nextFlash(){if(idx<session.length-1){idx++;flash()}else{show("home");toast("Session terminée 🎉")}}
 
-function setMode(m){mode=m;document.getElementById("frMode").classList.toggle("active",m==="fr");document.getElementById("enMode").classList.toggle("active",m==="en");newT()}
-function newT(){
- cur=sh(VOCAB)[0];
- document.getElementById("modeTitle").textContent=mode==="fr"?"Traduis ce mot en anglais":"Traduis ce mot en français";
- document.getElementById("tWord").textContent=mode==="fr"?cur.fr:cur.en;
- document.getElementById("tInput").value="";
- document.getElementById("tResult").textContent="";
- document.getElementById("tEx").style.display="none";
- document.getElementById("tExBtn").textContent="Afficher la phrase";
-}
-function norm(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[’']/g,"'").trim()}
-function checkT(){
- let ans=norm(document.getElementById("tInput").value);
- let target=norm(mode==="fr"?cur.en:cur.fr);
- let ok=ans===target||target.split(" / ").some(x=>norm(x)===ans);
- let x=state(cur.en);
- if(ok){x.correct++;x.level=Math.min(5,x.level+1);x.wrong=Math.max(0,x.wrong-1);document.getElementById("tResult").textContent="✓ Bravo !"}
- else{x.wrong++;x.level=Math.max(0,x.level-2);document.getElementById("tResult").textContent="✗ Réponse : "+(mode==="fr"?cur.en:cur.fr)}
- x.next=Date.now()+[0,0.02,0.15,1,3,7][x.level]*86400000;sr[cur.en]=x;save();
-}
-function toggleTExample(){
- let box=document.getElementById("tEx"),btn=document.getElementById("tExBtn");
- if(box.style.display==="none"){box.style.display="block";box.innerHTML="<i>"+cur.ex+"</i><br><br><b>🇫🇷 Traduction :</b><br>"+exampleFR(cur);btn.textContent="Masquer la phrase"}
- else{box.style.display="none";btn.textContent="Afficher la phrase"}
-}
+cur=null;
 
+function setMode(m){
+ mode=m;
+ document.getElementById("frMode").classList.toggle("active",m==="fr");
+ document.getElementById("enMode").classList.toggle("active",m==="en");
+ document.getElementById("translatorHint").textContent=m==="fr"
+   ?"Écris une phrase en français et je la traduis en anglais."
+   :"Écris une phrase en anglais et je la traduis en français.";
+ document.getElementById("tInput").placeholder=m==="fr"?"Écris ta phrase en français…":"Write your sentence in English…";
+ document.getElementById("tResultBox").style.display="none";
+ document.getElementById("translatorActions").style.display="none";
+}
+function newT(){setMode(mode)}
+function swapTranslator(){
+ let text=document.getElementById("tInput").value;
+ setMode(mode==="fr"?"en":"fr");
+ document.getElementById("tInput").value=text;
+}
+async function translateSentence(){
+ const input=document.getElementById("tInput").value.trim();
+ if(!input){toast("Écris une phrase à traduire ✍️");return}
+ const from=mode==="fr"?"fr":"en",to=mode==="fr"?"en":"fr";
+ const loading=document.getElementById("tLoading");
+ const box=document.getElementById("tResultBox");
+ const result=document.getElementById("tResult");
+ const label=document.getElementById("tResultLabel");
+ loading.style.display="block";box.style.display="none";document.getElementById("translatorActions").style.display="none";
+ try{
+   let translated=null;
+   // Primary service.
+   try{
+     const url="https://api.mymemory.translated.net/get?q="+encodeURIComponent(input)+"&langpair="+from+"|"+to;
+     const r=await fetch(url);
+     const d=await r.json();
+     if(d && d.responseData && d.responseData.translatedText) translated=d.responseData.translatedText;
+   }catch(e){}
+   // Fallback service.
+   if(!translated){
+     const url="https://translate.googleapis.com/translate_a/single?client=gtx&sl="+from+"&tl="+to+"&dt=t&q="+encodeURIComponent(input);
+     const r=await fetch(url);
+     const d=await r.json();
+     translated=(d[0]||[]).map(x=>x[0]).filter(Boolean).join("");
+   }
+   if(!translated)throw new Error("empty");
+   result.textContent=translated;
+   label.textContent=to==="en"?"🇬🇧 Anglais":"🇫🇷 Français";
+   box.style.display="block";document.getElementById("translatorActions").style.display="flex";
+ }catch(e){
+   result.textContent="Impossible de traduire pour le moment. Vérifie ta connexion Internet.";
+   label.textContent="⚠️ Traduction indisponible";
+   box.style.display="block";
+ }finally{loading.style.display="none"}
+}
+async function copyTranslation(){
+ const text=document.getElementById("tResult").textContent;
+ if(!text)return;
+ try{await navigator.clipboard.writeText(text);toast("Traduction copiée 📋")}
+ catch(e){toast("Sélectionne la traduction pour la copier.")}
+}
+function speakTranslation(){
+ const text=document.getElementById("tResult").textContent;
+ if(!text || !("speechSynthesis"in window)){toast("Lecture audio indisponible.");return}
+ const u=new SpeechSynthesisUtterance(text);u.lang=mode==="fr"?"en-US":"fr-FR";speechSynthesis.cancel();speechSynthesis.speak(u);
+}
+function clearTranslator(){document.getElementById("tInput").value="";document.getElementById("tResultBox").style.display="none";document.getElementById("translatorActions").style.display="none"}
+function exampleFR(w){
+ const e=w.ex;
+ const replacements=[["I want to ","Je veux "],["I need to ","Je dois "],["I am ","Je suis "],["I'm ","Je suis "],["Where is the ","Où est "],["Where can I find the ","Où puis-je trouver "],["How much is the ","Combien coûte "],["I'd like the ","Je voudrais "],["The weather is ","Le temps est "],["Is the ","Est-ce que le/la "],["Can you ","Pouvez-vous "],["I have ","J’ai "],["I booked a ","J’ai réservé un(e) "]];
+ for(const [a,b] of replacements)if(e.startsWith(a))return b+e.slice(a.length);
+ return "Essaie de comprendre la phrase anglaise avant d’afficher sa traduction. ("+w.fr+")";
+}
 function startQuiz(){
  qs=[];let seen=new Set();
  for(const w of weightedPool()){if(!seen.has(w.en)){seen.add(w.en);qs.push(w)}if(qs.length===10)break}
@@ -150,6 +210,7 @@ function exampleFR(w){
  return "Essaie de comprendre la phrase anglaise avant d’afficher sa traduction. ("+w.fr+")";
 }
 function toast(t){let x=document.getElementById("toast");x.textContent=t;x.style.display="block";setTimeout(()=>x.style.display="none",1700)}
+document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"&&document.getElementById("translate").classList.contains("active"))translateSentence()});
 document.addEventListener("DOMContentLoaded",()=>{
  [...new Set(VOCAB.map(x=>x.cat))].sort().forEach(c=>{let o=document.createElement("option");o.value=c;o.textContent=c;document.getElementById("cat").appendChild(o)});
  updateStats();renderWords();newT();if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
