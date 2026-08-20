@@ -154,5 +154,5 @@ document.addEventListener("DOMContentLoaded",()=>{
  [...new Set(VOCAB.map(x=>x.cat))].sort().forEach(c=>{let o=document.createElement("option");o.value=c;o.textContent=c;document.getElementById("cat").appendChild(o)});
  updateStats();renderWords();newT();if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 });
-
+</script>
 </body></html>
