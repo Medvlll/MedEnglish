@@ -24,7 +24,7 @@
 <div class="card hero progress-card">
   <span class="pill">TA PROGRESSION</span>
   <h2 style="margin-top:10px">Ton apprentissage 🇬🇧</h2>
-  <p class="small">Chaque mot maîtrisé te rapproche de ton objectif de 1000 mots.</p>
+  <p class="small">Chaque mot appris te rapproche de ton objectif de 1000 mots.</p>
   <div class="progress-ring" id="progressRing">
     <div class="progress-ring-inner">
       <strong id="masteredHome">0</strong>
@@ -33,7 +33,7 @@
   </div>
   <div class="progress-percent" id="progressPercent">0 %</div>
   <div class="bar"><div class="fill" id="progressBar"></div></div>
-  <div class="stat"><span>✓ Mots maîtrisés</span><b id="mastered">0 / 1000</b></div>
+  <div class="stat"><span>✓ Mots appris</span><b id="mastered">0 / 1000</b></div>
   <div class="stat"><span>↻ À revoir</span><b id="reviewHome">0</b></div>
 </div>
 <div class="card tip-card">
@@ -89,19 +89,36 @@ let session=[],idx=0,mode="fr",cur=null,qs=[],qi=0,score=0;
 function state(en){return sr[en]||{level:0,correct:0,wrong:0,next:0}}
 function save(){localStorage.setItem(KEY,JSON.stringify(sr));updateStats()}
 function updateStats(){
- let mastered=0,learning=0,review=0;
- VOCAB.forEach(w=>{let x=state(w.en);if(x.level>=5)mastered++;else if(x.correct||x.wrong)learning++;if(x.next&&x.next<=Date.now())review++});
- const pct=Math.min(100,Math.round((mastered/VOCAB.length)*100));
- const bar=document.getElementById("progressBar"); if(bar)bar.style.width=pct+"%";
- const ring=document.getElementById("progressRing"); if(ring)ring.style.background=`conic-gradient(var(--b) ${pct*3.6}deg,#e6eef2 ${pct*3.6}deg)`;
- const mh=document.getElementById("masteredHome"); if(mh)mh.textContent=mastered;
- const pp=document.getElementById("progressPercent"); if(pp)pp.textContent=pct+" %";
- const mh2=document.getElementById("mastered"); if(mh2)mh2.textContent=mastered+" / 1000";
- const rh=document.getElementById("reviewHome"); if(rh)rh.textContent=review;
- const pm=document.getElementById("pm"); if(pm)pm.textContent=mastered;
- const pr=document.getElementById("pr"); if(pr)pr.textContent=review;
- const pb=document.getElementById("pb"); if(pb)pb.style.width=pct+"%";
- let a=document.getElementById("streak");if(a)a.textContent=review?review+" mot(s) à revoir aujourd’hui.":"Aucune révision urgente. Continue ton apprentissage !";
+ let learned=0, mastered=0, review=0;
+ VOCAB.forEach(w=>{
+   const x=state(w.en);
+   if(x.level>0 || x.correct>0) learned++;
+   if(x.level>=5) mastered++;
+   if(x.next && x.next<=Date.now()) review++;
+ });
+ const pct=Math.min(100,Math.round((learned/VOCAB.length)*100));
+ const bar=document.getElementById("progressBar");
+ if(bar) bar.style.width=pct+"%";
+ const ring=document.getElementById("progressRing");
+ if(ring) ring.style.background=`conic-gradient(var(--b) ${pct*3.6}deg,#e6eef2 ${pct*3.6}deg)`;
+ const mh=document.getElementById("masteredHome");
+ if(mh) mh.textContent=learned;
+ const pp=document.getElementById("progressPercent");
+ if(pp) pp.textContent=pct+" %";
+ const mh2=document.getElementById("mastered");
+ if(mh2) mh2.textContent=learned+" / 1000";
+ const rh=document.getElementById("reviewHome");
+ if(rh) rh.textContent=review;
+ const pm=document.getElementById("pm");
+ if(pm) pm.textContent=mastered;
+ const pr=document.getElementById("pr");
+ if(pr) pr.textContent=review;
+ const pb=document.getElementById("pb");
+ if(pb) pb.style.width=pct+"%";
+ let a=document.getElementById("streak");
+ if(a) a.textContent=learned
+   ? `${learned} mot(s) appris sur 1000. Continue comme ça !`
+   : "Commence une session pour faire progresser ton compteur.";
 }
 function show(id){
  document.querySelectorAll(".view").forEach(x=>x.classList.remove("active"));
